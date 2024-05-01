@@ -1,0 +1,17 @@
+<div class="main-card">
+    <img src="../../../favicon.ico"/>
+    <h1 (click)="expanded = !expanded">{{title}}</h1>
+    @if (expanded){
+        <b>Ingrediant List:</b>
+        @for (item of ingrediants; track item) {
+            <li>{{item[1]}} ({{item[0]}})</li>
+        } @empty {
+            <li>Empty Ingrediants List</li>
+        }
+        <br/>
+        <b>Steps:</b>
+        @for (step of steps; track step) {
+            <li>{{step}}</li>
+        }
+    }
+</div>

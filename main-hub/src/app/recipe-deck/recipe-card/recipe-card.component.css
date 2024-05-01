@@ -1,0 +1,15 @@
+.main-card {
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+    width: 384px;
+    box-shadow: 4px 4px #666;
+    padding: 4px;
+    margin: 8px;
+    min-width: 200px;
+}
+
+img {
+    width: 192px; /* card-width / 2*/
+    padding-left: 96px; /* (card-width - self-width) / 2 */
+}
